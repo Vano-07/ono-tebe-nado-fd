@@ -18,7 +18,6 @@ html {
 }
 .ul-header {
     display: flex; 
-    list-style-type: none; 
     padding: 0;
     margin: 0;
     list-style-type: circle;
@@ -35,7 +34,7 @@ html {
 .img-header {
     height: 105px;
 }
-.img-header-s{
+.img-header-s {
     width: 148px;
     align-self: center;
 }
@@ -101,7 +100,6 @@ html {
     padding: 13px 26px;
     font-weight: 500;
     font-size: 22px;
-    text-transform: uppercase;  
 }
 .lot {
     width: 1052px;
@@ -206,7 +204,7 @@ html {
     width: 254px;
     color: rgb(230, 230, 230);
 }
-.ssyl-posmotret-bolshe-pom{
+.ssyl-posmotret-bolshe-pom {
     margin-top: 30px;
 }
 .ssyl-posmotret-bolshe {
