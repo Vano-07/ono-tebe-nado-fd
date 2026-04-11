@@ -2,9 +2,9 @@ html {
     scroll-behavior: smooth;
 }
 .header {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     width: 1100px;
-    height: 293px;
+    margin: 92px 0;
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
@@ -22,10 +22,10 @@ html {
     margin: 0;
     list-style-type: circle;
 }
-.fch-head {
+.li-header-none {
     list-style-type: none;
 }
-.glavnay-pravka {
+.header-nav-link {
     text-decoration: none;
 }
 .li-header {
@@ -34,23 +34,30 @@ html {
 .img-header {
     height: 105px;
 }
-.img-header-s {
+.herself-img-header {
     width: 148px;
     align-self: center;
 }
+.adresses-block {
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    line-height: 24.3px;
+}
 .adresses-header {
     width: 240px;
-    height: 98px;
     margin-left: 180px;
-    margin-top: 15px;
-    line-height: 24.3px;
-    font-size: 18px;
+    margin-top: 10px;
     justify-self: end;
     margin-right: 50px;
 }
+.adresses-text {
+    font-weight: 400;
+    font-size: 18px;
+}
 .cover {
     width: 1100px;
-    height: 757px;
+    min-height: 757px;
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
         url(../images/cover.jpg);
@@ -58,33 +65,35 @@ html {
     background-position: center;
     background-repeat: no-repeat;
 }
-.ono-tebe-nado {
+.cover-title {
     color: white;
     text-transform: uppercase;
     width: 1000px;
-    height: 550px;
     margin-left: 50px;
-    padding-top: 165px;
-    line-height: 114.9999px;
+    padding-top: 155px;
+    line-height: 1.34;
     font-weight: 700;
     font-size: 100px;
-    letter-spacing: 30%;
+    letter-spacing: 0.3em;
 }
-.cover-tebe {
-    margin-left: 330.5px;
+.cover-title-text-center {
+    display: block;
+    margin-right: -0.3em;
+    text-align: center;
 }
-.cover-nado {
-    margin-left: 613px;
+.cover-title-text-right {
+    display: block;
+    margin-right: -0.3em;
+    text-align: right;
 }
 .discription {
     display: flex;
     justify-content: space-between;
-    height: 51px;
     width: 1000px;
     margin-left: 50px;
     margin-top: 101px;
 }
-.text-cover-nl {
+.text-cover-floor {
     color: white;
     text-transform: uppercase;
     font-weight: 400;
@@ -96,18 +105,17 @@ html {
     color: white;
     text-transform: uppercase;
     background-color: transparent;
-    border: 1px solid hsl(0, 0%, 100%, 0.9) !important;
+    border: 1px solid hsl(0, 0%, 100%, 0.9);
     padding: 13px 26px;
     font-weight: 500;
     font-size: 22px;
 }
 .lot {
     width: 1052px;
-    height: 723px;
     margin-left: 24px;
     margin-top: 180px;
 }
-.zag-lot {
+.title-lot {
     font-weight: 700;
     font-size: 40px;
     text-transform: uppercase;
@@ -117,8 +125,11 @@ html {
     color: white;
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
     justify-content: space-between;
     margin-top: 27px;
+}    
 .article {
     font-size: 22px;
     font-weight: 700;
@@ -132,39 +143,31 @@ html {
     font-size: 20px;
     line-height: 120%;
     width: 254px;
-    height: 144px;
     margin-left: 40px;
     margin-bottom: 50px;
     color: rgb(230, 230, 230);
 }
-}
-.first-lot {
+.lotts {
     width: 334px;
-    height: 596px;
+    min-height: 596px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.li-lot-kino {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
         url(../images/card-lot-01.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
-.second-lot {
-    width: 334px;
-    height: 596px;
+.li-lot-book {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
         url(../images/card-lot-02.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
-.lot-text-kniga {
+.lot-text-book {
     width: 254px;
     height: 360px;
     margin-left: 40px;
@@ -174,28 +177,19 @@ html {
     color: rgb(230, 230, 230);
     margin-bottom: 50px;
 }
-.article-is2 {
-    height: 110px !important;
-    width: 255px !important;
+.article-book {
+    height: 110px;
+    width: 255px;
 }
-.fird-lot {
-    width: 334px;
-    height: 596px;
+.li-lot-picture {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
         url(../images/card-lot-03.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
-.article-is3 {
-    width: 255px !important;
-
+.article-picture {
+    width: 255px;
 }
-.lot-text-kartina {
+.lot-text-picture {
     margin-left: 40px;
     margin-bottom: 50px;
     font-weight: 400;
@@ -204,23 +198,22 @@ html {
     width: 254px;
     color: rgb(230, 230, 230);
 }
-.ssyl-posmotret-bolshe-pom {
+.div-main-floor {
     margin-top: 30px;
 }
-.ssyl-posmotret-bolshe {
+.a-main-floor {
     margin-left: 40px;
     font-size: 20px;
     font-weight: 400;
 }
-.about-akcion {
+.about-share {
     width: 1052px;
-    height: 595px;
     margin-left: 24px;
     margin-top: 120px;
     display: flex;
     justify-content: space-between;
 }
-.ne-poniytno {
+.about-share-img {
     background-color: rgb(0, 0, 0);
     width: 240px;
     height: 240px;
@@ -231,39 +224,37 @@ html {
     flex-direction: column;
     align-items: center;
 }
-.img-section-3 {
+.img-section-about-share {
     width: 148px;
     height: 114px;
     margin-top: 64px;
 }
-.info-akcion {
+.info-share {
     width: 693px;
-    height: 449px;
     margin-top: 133px;
 }
-.zag-akcion {
+.title-share {
     width: 291px;
-    height: 47px;
     margin-top: 3px;
     font-weight: 700;
     font-size: 40px;
     line-height: 100%;
     text-transform: uppercase;
 }
-.text-akcion {
+.text-share {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
-.action-p-1 {
+.share-p-high {
     width: 670px;
-    height: 120px;
     margin-top: 103px;
 }
-.action-p-2 {
-    width: 688px;
-    height: 168px;
-    margin-top: 24px;
+.share-p-next {
+    width: 690.9px;
 }
 .footer {
     width: 1100px;
@@ -272,23 +263,13 @@ html {
     display: flex;
     justify-content: space-between;
 }
-.footer-info {
-    width: 264.58px;
-    height: 98px;
-    display: flex;
-    flex-direction: column;
-    line-height: 24.3px;
+.adresses-footer {
     margin-left: 50px;
-}
-.footer-info-text {
-    font-weight: 400;
-    font-size: 18px;
 }
 .footer-navigation {
     display: flex;
     flex-direction: column;
     width: 163.9px;
-    height: 64px;
     text-align: center;
 }
 .footer-navigation-text {
@@ -300,7 +281,6 @@ html {
 }
 .footer-social-seti {
     width: 240px;
-    height: 48px;
     display: flex;
     gap: 48px;
     margin-right: 50px;
