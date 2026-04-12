@@ -162,7 +162,7 @@ html {
     flex-direction: column;
     justify-content: space-between;
 }
-.article-lots{
+.article-lots {
     width: 334px;
     min-height: 596px;
     display: flex;
